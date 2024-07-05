@@ -117,69 +117,66 @@ python manage.py createsuperuser
 
 1. 首页
 
-![https://i-blog.csdnimg.cn/direct/be255beb67d5428f94242edbf6df7c6e.png](https://i-blog.csdnimg.cn/direct/be255beb67d5428f94242edbf6df7c6e.png)
+![home.png](https://s2.loli.net/2024/07/05/DRG3j4IMZBLozWU.png)
 
 登录后
 
-![](https://i-blog.csdnimg.cn/direct/26cd534b6ecf433db353cda1ae588e15.png)
+![home_logined.png](https://s2.loli.net/2024/07/05/JlquMQnvNByYhbI.png)
 
 2. 注册页
 
-![](https://i-blog.csdnimg.cn/direct/8f41572a148342cf93d4c647b9072bf4.png)
+![register.png](https://s2.loli.net/2024/07/05/jMvxdunhwGSofAJ.png)
 
 3. 登录页
 
-![](https://i-blog.csdnimg.cn/direct/9df95a813bc14a99b9d281adcb6426cd.png)
+![login.png](https://s2.loli.net/2024/07/05/xg3s8ftdBlM9SYL.png)
 
 4. 面部信息注册页
 
-​	![](https://i-blog.csdnimg.cn/direct/c1d22e1c20c54e3ca4fd7c164bb8b0c3.jpeg)
+![faceRegister.jpg](https://s2.loli.net/2024/07/05/nGMRzr9ySO61fLQ.jpg)
 
 5. 考勤打卡页
 
-​	![](https://i-blog.csdnimg.cn/direct/03bf463333524b5a92d41580d06efc4d.jpeg)
+![punch.jpg](https://s2.loli.net/2024/07/05/yrhUDMTHkVLzZWI.jpg)
 
 6. 管理员页
 
-![](https://i-blog.csdnimg.cn/direct/ada9299856234994b2e5acf170119d0e.png)
+![admin_login.png](https://s2.loli.net/2024/07/05/UZ1eADzqu4mTNfE.png)
 
-![](https://i-blog.csdnimg.cn/direct/0d0fc799678545d6b43709e5424c679a.png)
+![admin_interface1.png](https://s2.loli.net/2024/07/05/zpw3IT85nOQWryG.png)
 
 - 普通用户管理页
 
-​	![](https://i-blog.csdnimg.cn/direct/b7651e840a06485bade4c0947301ffa4.png)
+![admin_interface_user1.png](https://s2.loli.net/2024/07/05/qzOL97nBUrF84iG.png)
 
-![](https://i-blog.csdnimg.cn/direct/fc1b6aa8688543cba69e65ea0134bc33.png)
+![admin_interface_user2.png](https://s2.loli.net/2024/07/05/byfCtLeD3rHpJOA.png)
 
 - 考勤信息管理页
 
-​	![](https://i-blog.csdnimg.cn/direct/3229d30b36fa4f9893a9d5f36bd9ff78.png)
+![admin_interface_attendance1.png](https://s2.loli.net/2024/07/05/uSaYFMisQKjbIch.png)
 
 考勤信息邮箱发送至管理员邮箱
-
-![](https://i-blog.csdnimg.cn/direct/ad1de4c21cdf4f1e9c39b3425f78798f.png)
+![admin_interface_attendance4.png](https://s2.loli.net/2024/07/05/57Jl6qrmZMKyNEc.png)
 
 上下班时间点管理页
 
-![](https://i-blog.csdnimg.cn/direct/513d2b59189f4549a95240e0d8a48673.png)
+![admin_interface_worktime1.png](https://s2.loli.net/2024/07/05/VYi4ZoO3lMjLsyX.png)
 
-![](https://i-blog.csdnimg.cn/direct/3f0ce833b2044772888ff9199929a147.png)
+![admin_interface_worktime2.png](https://s2.loli.net/2024/07/05/TC9td6IyJs8Mpav.png)
 
 用户组管理页
 
-![](https://i-blog.csdnimg.cn/direct/c876e4639f244f199b8a14c99b22cada.png)
+![admin_interface_group.png](https://s2.loli.net/2024/07/05/rBMWGnDlycv3qYs.png)
 
 - 注册者邮箱接收内容
 
-![](https://i-blog.csdnimg.cn/direct/11697c5624b54433859a26fb3d6c671e.jpeg)
+![email_content2.jpg](https://s2.loli.net/2024/07/05/ovJFOEjeuyzA2Z1.jpg)
 
-
-
-![](https://i-blog.csdnimg.cn/direct/f8dfad5453e5464fb22822dac45f4ee7.jpeg)
+![email_content1.jpg](https://s2.loli.net/2024/07/05/xHbw6aOipEzmhPe.jpg)
 
 - 管理员邮箱接收内容
 
-​	![](https://i-blog.csdnimg.cn/direct/29d56126ec174d8d97a62ca6389467c9.jpeg)
+![email_content3.jpg](https://s2.loli.net/2024/07/05/RMaiTYJA2Gwp7Wk.jpg)
 
 `attendance_records.xlsx` 即为考勤记录导出结果
 
