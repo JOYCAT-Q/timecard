@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面部注册</title>
+    <link rel="stylesheet" href="{% static 'sign/css/faceRegister.css' %}">
+</head>
+<body>
+    <div id="success-message"></div>
+        <video id="videoElement" autoplay></video>
+        <canvas id="canvasElement"></canvas>
+        <img id="photo" hidden="hidden" style="display: none;" />
+        <div style="clear: both"></div>
+    <div class="button-container">
+        <button id="openCameraButton">打开摄像头</button>
+        <button id="closeCameraButton" disabled>关闭摄像头</button>
+        <button id="captureButton" disabled>拍照</button>
+        <button id="submitBtn">提交</button>
+        <div style="clear: both"></div>
+    </div>
+    <script src="{% static 'sign/js/faceRegister.js' %}"></script>
+    <script src="{% static 'sign/js/jquery.min.js' %}"></script>
+    <script src="{% static 'sign/js/popper.js' %}"></script>
+    <script src="{% static 'sign/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sign/js/main.js' %}"></script>
+</body>
+</html>

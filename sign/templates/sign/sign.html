@@ -1,0 +1,65 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <title> sign </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'sign/css/sign.css' %}">
+</head>
+
+<body>
+<div class="container" id="container">
+	<div class="row">
+	<div class="form-container sign-up-container">
+		<form action="{% url 'sign:register' %}" method="post" onsubmit="return validatePasswords()">
+            {% csrf_token %}
+			<h1>Create Account</h1>
+            <img id="photo" hidden="hidden" style="display: none;" alt="none"/>
+			<span>use your qq email for registration</span>
+			<input type="text" name="username" placeholder="Name" required/>
+			<input type="email" name="qq_email" placeholder="QQ Email" required/>
+			<input type="password" id="pwd1" name="password1" placeholder="Password" required/>
+            <input type="password" id="pwd2" name="password2" placeholder="Password Again" required/>
+			<button>Sign Up</button>
+            {% if output_messages %}<p><strong>{{ output_messages }}</strong></p>{% endif %}
+			<p id="mobile_para">To keep connected with us,please login</p>
+			<button class="ghost_mobile" id="signIn_mobile">Sign In</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="{% url 'sign:login' %}" method="post">
+            {% csrf_token %}
+			<h1>Sign in</h1>
+			<span>use your account</span>
+			<input type="text" name="username" placeholder="Name" required/>
+			<input type="password" name="password" placeholder="Password" required/>
+			<button>Sign In</button>
+            {% if output_messages %}<p><strong>{{ output_messages }}</strong></p>{% endif %}
+			<p id="mobile_para">Don't have an account? Sign up here !!</p>
+			<button class="ghost_mobile" id="signUp_mobile">Sign Up</button>
+
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+                <p>When you register successfully, we will email you address</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<script src="{% static 'sign/js/sign.js' %}"></script>
+</body>
+</html>

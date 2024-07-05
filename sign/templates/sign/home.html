@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>首页</title>
+    <link rel="stylesheet" href="{% static 'sign/css/home.css' %}">
+</head>
+<body>
+<div class="homeTitle">Django 人脸考勤</div>
+<div class='ribbon'>
+    {% if request.user.is_authenticated %}
+        <a><span>{{ request.user.username }}</span></a>
+         <a href="{% url 'sign:logout' %}"><span>退出登录</span></a>
+    {% else %}
+        <a><span>未登录</span></a>
+    {% endif %}
+    <a href={% url 'sign:home' %}><span>首页</span></a>
+
+</div>
+    <section>
+          <div>
+              <a href="{% url 'sign:login' %}">
+                <img src="{% static 'sign/images/login.jpg' %}"/>
+              </a>
+          </div>
+          <div>
+              <a href="{% url 'sign:register' %}">
+               <img src="{% static 'sign/images/register.jpg' %}"/>
+              </a>
+          </div>
+          <div>
+              <a href="{% url 'sign:punching' %}">
+               <img src="{% static 'sign/images/ding.jpg' %}"/>
+              </a>
+          </div>
+          <div>
+              <a href='/admin'>
+               <img src="{% static 'sign/images/admin.jpg' %}"/>
+              </a>
+          </div>
+          <div>
+              <a href="{% url 'sign:face' %}">
+               <img src="{% static 'sign/images/faceEmb.jpg' %}"/>
+              </a>
+          </div>
+     </section>
+<script src="{% static 'sign/js/jquery.min.js' %}"></script>
+<script src="{% static 'sign/js/home.js' %}"></script>
+</body>
+</html>

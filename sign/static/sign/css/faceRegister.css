@@ -1,0 +1,70 @@
+/* 为所有按钮设置统一样式和圆角 */
+body {
+    background-image: url("../images/homebg.jpg");
+    width: 100%;
+    background-color: transparent;
+    margin: 0 auto;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px; /* 圆角 */
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white; /* 白色文字 */
+    cursor: pointer; /* 鼠标悬停时显示手指形状 */
+    transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时颜色变深 */
+}
+
+/* 视频元素样式，放置在页面左侧 */
+#videoElement {
+    width: 40; /* 占据页面宽度的48% */
+    height: auto; /* 高度自适应 */
+    float: left; /* 浮动到左侧 */
+    border-radius: 10%; /* 圆角 */
+    margin-right: 10%; /* 与右侧元素间隔 */
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#success-message {
+    text-align: center;
+    background-color: #000000;
+    color: #dee2e6;
+    margin: 0 auto;
+}
+/* 拍照后显示的图片样式，放置在页面右侧 */
+#photo {
+    width: 48%; /* 占据页面宽度的48% */
+    height: auto; /* 高度自适应 */
+    float: right; /* 浮动到右侧 */
+    border-radius: 10%; /* 圆角 */
+    display: inline-block; /* 显示图片 */
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+/* 底部按钮容器样式，用于居中显示按钮 */
+.button-container {
+    text-align: center; /* 文本居中，也适用于内联元素如按钮 */
+    position: fixed; /* 固定定位 */
+    bottom: 0; /* 紧贴页面底部 */
+    width: 100%; /* 宽度100% */
+    padding: 10px 0; /* 上下内边距 */
+    background-color: rgba(200, 200, 200, 0.5); /* 半透明黑色背景 */
+    border-radius: 10px 10px 0 0; /* 顶部圆角 */
+}
+#canvasElement {
+    width: 30%;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* 其他元素的圆角样式 */
+#success-message, #canvasElement {
+    border-radius: 10px; /* 圆角 */
+}

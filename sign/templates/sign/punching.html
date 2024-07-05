@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打卡</title>
+    <link rel="stylesheet" href="{% static 'sign/css/faceRegister.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="success-message"></div>
+        <video id="videoElement" autoplay></video>
+        <canvas id="canvasElement"></canvas>
+        <img id="photo" hidden="hidden" style="display: none;" />
+        <div style="clear: both"></div>
+    <div class="button-container">
+        <input type="hidden" id="punching_location" name="punching_location">
+        <button id="openCameraButton">打开摄像头</button>
+        <button id="closeCameraButton" disabled>关闭摄像头</button>
+        <button id="captureButton" disabled>拍照</button>
+        <button type="button" id="locateButton" >当前经纬度 :</button>
+        <button id="lng_lat"></button>
+        <button id="submitBtn">打卡</button>
+        <div style="clear: both"></div>
+    </div>
+    <script src="{% static 'sign/js/punching.js' %}"></script>
+    <script src="{% static 'sign/js/jquery.min.js' %}"></script>
+    <script src="{% static 'sign/js/popper.js' %}"></script>
+    <script src="{% static 'sign/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sign/js/main.js' %}"></script>
+</body>
+</html>
